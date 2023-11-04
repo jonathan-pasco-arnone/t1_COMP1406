@@ -34,12 +34,12 @@ public class TaxProgram {
 
         // Printing
         System.out.println("Here is your tax breakdown:");
-        System.out.println(String.format("Income: %20s", String.format("$%,1.2f", income)));
-        System.out.println(String.format("Dependants: %16s", dependents));
+        System.out.printf("Income: %20s%n", String.format("$%,1.2f", income));
+        System.out.printf("Dependants: %16s%n", dependents);
         System.out.println("----------------------------");
-        System.out.println(String.format("Federal Tax: %15s", String.format("$%,1.2f", fedTax)));
-        System.out.println(String.format("Provincial Tax: %12s", String.format("$%,1.2f", provTax)));
+        System.out.printf("Federal Tax: %15s%n", String.format("$%,1.2f", fedTax));
+        System.out.printf("Provincial Tax: %12s%n", String.format("$%,1.2f", provTax));
         System.out.println("============================");
-        System.out.println(String.format("Total Tax: %17s", String.format("$%,1.2f", (fedTax + provTax))));
+        System.out.printf("Total Tax: %17s%n", String.format("$%,1.2f", (fedTax + provTax)));
     }
 }
