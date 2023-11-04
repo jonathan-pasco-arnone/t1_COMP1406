@@ -1,4 +1,4 @@
-/* Tax Program
+/* Tax program
 
 Created by: Jonathan Pasco-Arnone
 Created on: November 2023

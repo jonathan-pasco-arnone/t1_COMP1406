@@ -1,4 +1,4 @@
-/* Array Program
+/* Array program
 
 Created by: Jonathan Pasco-Arnone
 Created on: November 2023
