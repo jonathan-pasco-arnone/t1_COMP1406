@@ -66,27 +66,24 @@ public class ArrayPractice{
     //This method should return the largest integer value contained in the argument array
     public static int max(int[] arr){
         int highest = 0;
-
         for (int item : arr) {
             if (item > highest) {
                 highest = item;
             }
         }
-
         return highest;
     }
 
     //This method should compute the average/mean of the values contained in the argument array.
     public static double average(int[] arr){
-        double average = (double) arr[0]; // average starts as the first number
-
-        for (int i = 1; i < arr.length; i++) {
+        double average = arr[0]; // average starts as the first number
+        for (int count = 1; count < arr.length; count++) {
             /*
             Multiplies the old average by the old count to get the sum
+            Then adds the new value and divides by the new count
             */
-            average = (double) (average * i +arr[i]) / (i + 1);
+            average = (average * count +arr[count]) / (count + 1);
         }
-
         return average;
     }
 
@@ -94,7 +91,18 @@ public class ArrayPractice{
     //That is, return true if a and b have the same length and the values at each index are equal
     //Otherwise, the method should return false
     public static boolean areIdentical(int[] a, int[] b){
-        return false;
+        // Checks if they are both the same length
+        if (a.length == b.length) {
+            // Checks if every value is equivalent
+            for (int count = 0; count < a.length; count++) {
+                if (a[count] != b[count]) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
     }
 
     //The arguments for this method will be two sorted arrays (sorted in increasing order).
@@ -102,7 +110,28 @@ public class ArrayPractice{
     //In other words, you are merging the two sorted lists into a new sorted list.
     //There are many ways to solve this problem, some of which are more efficient than others.
     public static int[] merge(int[] a, int[] b){
-        return new int[0];
+        int newArray[] = new int[a.length + b.length];
+        int aCounter = 0;
+        int bCounter = 0;
+        while ((aCounter + bCounter) != newArray.length) {
+            // First checks if the a and b counters are at their ends
+            if (aCounter == a.length) {
+                newArray[aCounter + bCounter] = b[bCounter];
+                bCounter++;
+            } else if (bCounter == b.length) {
+                newArray[aCounter + bCounter] = a[aCounter];
+                aCounter++;
+
+            // Checks if a is bigger than b
+            } else if (b[bCounter] < a[aCounter]) {
+                newArray[aCounter + bCounter] = b[bCounter];
+                bCounter++;
+            } else {
+                newArray[aCounter + bCounter] = a[aCounter];
+                aCounter++;
+            }
+        }
+        return newArray;
     }
 
     //This method should return the length of the longest increasing sequence in the argument array.

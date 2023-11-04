@@ -32,14 +32,16 @@ public class TaxProgram {
         provTax = 0.425 * fedTax - (160.5  + 328 * dependents);
 
         // Printing
+        final String moneyFormat= "$%,1.2f";
+
         System.out.println("Here is your tax breakdown:");
         // printf is the same thing as using println(String.format()), but it looks cleaner
-        System.out.printf("Income: %20s%n", String.format("$%,1.2f", income));
+        System.out.printf("Income: %20s%n", String.format(moneyFormat, income));
         System.out.printf("Dependants: %16s%n", dependents);
         System.out.println("----------------------------");
-        System.out.printf("Federal Tax: %15s%n", String.format("$%,1.2f", fedTax));
-        System.out.printf("Provincial Tax: %12s%n", String.format("$%,1.2f", provTax));
+        System.out.printf("Federal Tax: %15s%n", String.format(moneyFormat, fedTax));
+        System.out.printf("Provincial Tax: %12s%n", String.format(moneyFormat, provTax));
         System.out.println("============================");
-        System.out.printf("Total Tax: %17s%n", String.format("$%,1.2f", (fedTax + provTax)));
+        System.out.printf("Total Tax: %17s%n", String.format(moneyFormat, (fedTax + provTax)));
     }
 }
