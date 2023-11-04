@@ -23,21 +23,23 @@ public class TaxProgram {
         if (income <= 29590) {
             fedTax = 0.17 * income;
         } else if (29590.01 <= income && income <= 59179.99) {
-            /*
-            The rounding and the times/divide by 100 is so that the numbers remains as 2 decimal places
-            Additionally, since Math.round converts to float value, I need to change it back to a double using (double)
-            */
-            fedTax = (double) Math.round((0.17 * 29590 + 0.26 * (income - 29590)) * 100) / 100;
+            fedTax = 0.17 * 29590 + 0.26 * (income - 29590);
         } else {
             // The 0.43 is the same as 0.17 + 0.26
-            fedTax = (double) Math.round(( 0.43 * 29590 + 0.29 * (income - 59180)) * 100) / 100;
+            fedTax =  0.43 * 29590 + 0.29 * (income - 59180);
         }
 
         // Provincial tax calculation
-        provTax = (double) Math.round((0.425 * fedTax - (160.5  + 328 * dependents)) * 100) / 100;
+        provTax = 0.425 * fedTax - (160.5  + 328 * dependents);
 
-        System.out.println("Your fedTax is: " + fedTax);
-        System.out.println("Your provTax is: " + provTax);
-        System.out.println("Your total tax is: " + (provTax + fedTax));
+        // Printing
+        System.out.println("Here is your tax breakdown:");
+        System.out.println(String.format("Income: %20s", String.format("$%,1.2f", income)));
+        System.out.println(String.format("Dependants: %16s", dependents));
+        System.out.println("----------------------------");
+        System.out.println(String.format("Federal Tax: %15s", String.format("$%,1.2f", fedTax)));
+        System.out.println(String.format("Provincial Tax: %12s", String.format("$%,1.2f", provTax)));
+        System.out.println("============================");
+        System.out.println(String.format("Total Tax: %17s", String.format("$%,1.2f", (fedTax + provTax))));
     }
 }
