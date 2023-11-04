@@ -14,7 +14,6 @@ public class TaxProgram {
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter your taxable income: ");
         income = input.nextDouble();
-        System.out.println();
         System.out.print("Please enter your number of dependents: ");
         dependents = input.nextInt();
         System.out.println();
@@ -34,6 +33,7 @@ public class TaxProgram {
 
         // Printing
         System.out.println("Here is your tax breakdown:");
+        // printf is the same thing as using println(String.format()), but it looks cleaner
         System.out.printf("Income: %20s%n", String.format("$%,1.2f", income));
         System.out.printf("Dependants: %16s%n", dependents);
         System.out.println("----------------------------");
