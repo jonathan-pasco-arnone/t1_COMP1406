@@ -110,7 +110,7 @@ public class ArrayPractice{
     //In other words, you are merging the two sorted lists into a new sorted list.
     //There are many ways to solve this problem, some of which are more efficient than others.
     public static int[] merge(int[] a, int[] b){
-        int newArray[] = new int[a.length + b.length];
+        int[] newArray = new int[a.length + b.length];
         int aCounter = 0;
         int bCounter = 0;
         while ((aCounter + bCounter) != newArray.length) {
@@ -140,6 +140,19 @@ public class ArrayPractice{
     //In the same array, 3-5-7 is an increasing sequence of length 3.
     //Note that 0-1-2-4-3-5-7 is not an increasing sequence as there is a 3 (which is not greater than 4) between 4 and 5.
     public static int longestIncreasingSequence(int[] a){
-        return -1;
+        int longestSequence = 0;
+        int currentSequence = 1;
+        // Checks each sequence to determine the longest one
+        for (int count = 1; count != a.length; count++) {
+            if (a[count] > a[count - 1]) {
+                currentSequence++;
+            } else {
+                currentSequence = 1;
+            }
+            if (currentSequence > longestSequence) {
+                longestSequence = currentSequence;
+            }
+        }
+        return longestSequence;
     }
 }
