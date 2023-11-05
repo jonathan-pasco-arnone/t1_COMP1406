@@ -8,7 +8,9 @@ import java.util.Scanner;
 
 public class TaxProgram {
     public static void main(String[] args) {
-        double income, fedTax, provTax;
+        double income;
+        double fedTax;
+        double provTax;
         int dependents;
 
         Scanner input = new Scanner(System.in);

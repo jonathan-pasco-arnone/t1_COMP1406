@@ -1,0 +1,40 @@
+
+u
+java:S1192+"SDefine a constant instead of duplicating this literal " (should be false)" 3 times.(³àÂéùÿÿÿÿ8õÀšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(ÚÔàãúÿÿÿÿ8¥Ãšà¹1
+G	java:S106"+Replace this use of System.out by a logger.(º’ûÊ8¥Ãšà¹1
+G	java:S106"+Replace this use of System.out by a logger.(®Äè¥8¦Ãšà¹1
+G	java:S106"+Replace this use of System.out by a logger.(ĞÕÖÑ8¦Ãšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¦Ãšà¹1
+G	java:S106"+Replace this use of System.out by a logger.(£ËÍÛ8¦Ãšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(é„îüşÿÿÿÿ8¦Ãšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(ÂÛ³€ûÿÿÿÿ8¦Ãšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(“şÁëüÿÿÿÿ8§Ãšà¹1
+L	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8§Ãšà¹1
+G	java:S106 "+Replace this use of System.out by a logger.(‘ÑŸæ8§Ãšà¹1
+G	java:S106!"+Replace this use of System.out by a logger.(±„­º8§Ãšà¹1
+G	java:S106""+Replace this use of System.out by a logger.(¶´ø©8§Ãšà¹1
+G	java:S106#"+Replace this use of System.out by a logger.(àê“…8¨Ãšà¹1
+L	java:S106$"+Replace this use of System.out by a logger.(ƒ±¿ııÿÿÿÿ8¨Ãšà¹1
+G	java:S106%"+Replace this use of System.out by a logger.(òòû°8¨Ãšà¹1
+G	java:S106&"+Replace this use of System.out by a logger.(Õòç¡8¨Ãšà¹1
+L	java:S106'"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8©Ãšà¹1
+F	java:S106)"+Replace this use of System.out by a logger.(ğØŒ%8©Ãšà¹1
+L	java:S106*"+Replace this use of System.out by a logger.(‘±ñùÿÿÿÿ8©Ãšà¹1
+L	java:S106+"+Replace this use of System.out by a logger.(³àÂéùÿÿÿÿ8©Ãšà¹1
+G	java:S106,"+Replace this use of System.out by a logger.(±æØ´8©Ãšà¹1
+G	java:S106-"+Replace this use of System.out by a logger.(ƒğÙ8ªÃšà¹1
+L	java:S106."+Replace this use of System.out by a logger.(Ò™‚Àøÿÿÿÿ8ªÃšà¹1
+L	java:S106/"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ªÃšà¹1
+G	java:S1068"+Replace this use of System.out by a logger.(åãƒˆ8ªÃšà¹1
+L	java:S1069"+Replace this use of System.out by a logger.(§óØşÿÿÿÿ8ªÃšà¹1
+G	java:S106:"+Replace this use of System.out by a logger.(ÿªû8ªÃšà¹1
+F	java:S106;"+Replace this use of System.out by a logger.(ƒª®i8«Ãšà¹1
+L	java:S106<"+Replace this use of System.out by a logger.(éü¥ışÿÿÿÿ8«Ãšà¹1
+G	java:S106="+Replace this use of System.out by a logger.(»”È°8«Ãšà¹1
+L	java:S106>"+Replace this use of System.out by a logger.(‘ÕõÊøÿÿÿÿ8«Ãšà¹1
+L	java:S106?"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8«Ãšà¹1
+k
+java:S1871"MThis branch's code block is the same as the block for the branch on line 121.(å¥‡8®Ãšà¹1
+o
+java:S1871~"MThis branch's code block is the same as the block for the branch on line 118.(©®Øùÿÿÿÿ8®Ãšà¹1
